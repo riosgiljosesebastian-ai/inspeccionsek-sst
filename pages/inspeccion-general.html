@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspección General</title>
+</head>
+<body>
+    <h1>Formulario de Inspección General del Lugar de Trabajo</h1>
+    <form>
+        <label for="date">Fecha de Inspección:</label><br>
+        <input type="datetime-local" id="date" name="date" required><br><br>
+
+        <label for="inspector">Nombre del Inspector:</label><br>
+        <input type="text" id="inspector" name="inspector" required><br><br>
+
+        <h2>Condiciones Generales</h2>
+        <label for="conditions">¿Se cumple con las condiciones de seguridad y salud?</label><br>
+        <select id="conditions" name="conditions">
+            <option value="yes">Sí</option>
+            <option value="no">No</option>
+            <option value="n/a">No Aplica</option>
+        </select><br><br>
+
+        <h2>Observaciones</h2>
+        <label for="observations">Observaciones sobre la inspección:</label><br>
+        <textarea id="observations" name="observations" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Enviar Inspección">
+    </form>
+</body>
+</html>
